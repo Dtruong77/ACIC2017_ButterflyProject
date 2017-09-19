@@ -1,4 +1,27 @@
-# Ignore everything in this directory
-*
-# Except this file
-!.gitignore
+Butterly Species Distribution Project
+- ISTA 422 - Applied Concepts in CyberInfrastructure
+- Fall 2017
+- Maintainer: Daniel Truong (dtruong@email.arizona.edu)
+- Clients: Katry Prudic (klprudic@email.arizona.edu), Jeff Oliver (jcoliver@email.arizona.edu)
+
+Description:
+The aim of this project is to create a graphical representation(heatmap) of butterfly species distribution. Every month the species data will be taken and run through a species distribution model. The results, for that month and all species, will then be displayed in a heat map. This will provide two key benefits to butterfly ecology: it will help identy undersampled areas, and it will make it easier to direct citizen scientists.
+
+General approach: (As described by Eric Lyons on https://tinyurl.com/y8x7p98m)
+- Retrieve historical climate data http://www.worldclim.org
+- Get a list of all species in databases (eButterfly & iNaturalist)
+- Get lat/long data for one species from databases
+- Extract data for one month
+- Perform quality check (minimum # observations)
+- Run SDM (Species Distribution Model)
+- Create graphic with standardized name for use on eButterfly.org web resource
+Repeat steps 4-7 for remaining months
+Repeat steps 3-7 for remaining species
+
+Data Sources:
+eButterfly - http://www.e-butterfly.org/
+iNaturalist - www.inaturalist.org
+worldclim - http://www.worldclim.org/
+
+Computing Resources:
+UA-HPC
